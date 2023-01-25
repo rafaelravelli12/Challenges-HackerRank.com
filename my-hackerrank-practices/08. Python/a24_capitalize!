@@ -1,0 +1,7 @@
+abc = input().split()
+b = []
+for i in range(len(abc)):
+    b.append(abc[i].capitalize())
+c = " ".join(b)
+print(c)
+
