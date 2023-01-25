@@ -2,6 +2,6 @@
 
 ### Estimeed Sirs,
 
-This repository is being used to allocate my resolutions for exercises proposed on the website www.hackerrank.com.
+This repository is being used to allocate my resolutions of proposed exercises of www.hackerrank.com.
 
 Graciously,
