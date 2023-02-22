@@ -1,6 +1,6 @@
-import java.util.*;
+import java.util.Scanner;
 
-public class a02_java_stdin_and_stdout_I {
+public class a02 {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
