@@ -1,21 +1,16 @@
-import java.io.*;
-import java.util.*;
 import java.util.Scanner;
 
-public class Solution {
+public class a09_java_end_of_file {
 
-    public static void main(String[] args) {
-                
-        Scanner scanner = new Scanner(System.in);
-        int n = 1;
-        while (scanner.hasNext())
-        {
-            System.out.println(n + " " + scanner.nextLine());
-            n++;
+    public static void main(String[] args) {          
+        Scanner scan = new Scanner(System.in);
+        int number = 1;
+        while (scan.hasNext()) {
+        	System.out.println(number + " " + scan.nextLine());
+        	number++;
         }
-        
-        scanner.close();
-
+        scan.close();
     }
 }
 
+// doesn't break the loop yet

@@ -1,6 +1,0 @@
-https://www.hackerrank.com/domains/java
-
-a01 - Welcome to Java!
-a02 -  Java Stdin and Stdout I
-a03 - Java If-Else
-a04 - Java Stdin and Stdout II
