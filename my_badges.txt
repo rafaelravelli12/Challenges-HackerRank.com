@@ -1,0 +1,24 @@
+01. Algotirhms
+02. Artificial Intelligence
+03. Java
+	1 Star - Bronze 25
+	2 Star - Bronze	50
+	3 Star - Silver	80
+04. SQL
+	1 Star - Bronze 80
+	2 Star - Bronze 175
+	3 Star - Silver 300
+05. Functional Programming
+06. Data Structures
+07. C
+08. Python
+	1 Star - Bronze 35
+	2 Star - Bronze 70
+	3 Star - Silver 110
+	4 Star - Silver 220
+09. Databases
+10. Regex
+11. Mathematics
+12. C++
+13. Ruby
+14. Linux Shell
