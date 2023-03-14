@@ -1,8 +1,10 @@
+-- https://www.hackerrank.com/challenges/average-population/problem?isFullScreen=true
+
 -- CREATE TABLE CITY (
 --     ID INT AUTO_INCREMENT PRIMARY KEY,
--- 	NAME VARCHAR(50),
--- 	COUNTRYCODE VARCHAR(3),
--- 	DISTRICT VARCHAR(50),
+-- 	NAME VARCHAR(255),
+-- 	COUNTRYCODE VARCHAR(255),
+-- 	DISTRICT VARCHAR(255),
 --     POPULATION DECIMAL(20,6)
 -- );
 

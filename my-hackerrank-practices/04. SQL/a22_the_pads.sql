@@ -1,3 +1,5 @@
+-- https://www.hackerrank.com/challenges/the-pads/problem?isFullScreen=true
+
 SELECT * FROM(
     SELECT CONCAT(Name,'(',SUBSTRING(Occupation,1,1),')')
     FROM a22_the_pads

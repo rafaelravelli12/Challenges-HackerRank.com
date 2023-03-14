@@ -1,3 +1,5 @@
+-- https://www.hackerrank.com/challenges/what-type-of-triangle/problem?isFullScreen=true
+
 SELECT
 CASE
 	when (A+B<=C) or (B+C<=A) or (A+C<=B) then 'Not A Triangle'

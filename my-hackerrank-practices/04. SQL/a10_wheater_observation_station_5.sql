@@ -1,3 +1,5 @@
+-- https://www.hackerrank.com/challenges/weather-observation-station-5/problem?isFullScreen=true
+
 SELECT MIN(CITY), MAX(LENGTH(CITY)) FROM STATION
 WHERE LENGTH(CITY) = (SELECT MIN(LENGTH(CITY)) FROM STATION) 
 
