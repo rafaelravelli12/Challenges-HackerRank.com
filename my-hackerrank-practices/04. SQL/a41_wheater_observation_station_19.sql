@@ -1,0 +1,35 @@
+-- https://www.hackerrank.com/challenges/weather-observation-station-19/problem?isFullScreen=true
+
+-- CREATE TABLE STATION (
+-- 	ID INT AUTO_INCREMENT PRIMARY KEY,
+-- 	CITY VARCHAR(255),
+-- 	STATE VARCHAR(255),
+-- 	LAT_N DECIMAL(10,4),
+-- 	LONG_W DECIMAL(10,4)
+-- );
+
+-- INSERT INTO STATION (CITY, STATE, LAT_N, LONG_W)
+-- VALUES
+-- 	("CITY_01", "STATE_01", 10.20, 30.20),
+-- 	("CITY_02", "STATE_02", 30.20, 50.20),
+-- 	("CITY_02", "STATE_02", 40.20, 60.20),
+-- 	("CITY_02", "STATE_02", 50.20, 80.20)
+
+SELECT
+	ROUND(
+		SQRT(
+			POWER(
+				MIN(LAT_N) - MAX(LAT_N)
+			,2)
+			+
+			POWER(
+				MIN(LONG_W) - MAX(LONG_W)
+			,2)
+		)
+	,4)
+FROM STATION
+
+-- STRANGELY, THE SITE IS NOT ACCEPTING THE PROPOSED INDENTATION
+-- SAME AND ACCEPTED ANSWER:
+
+-- SELECT ROUND(SQRT(POW((MAX(LAT_N)-MIN(LAT_N)),2)+POW((MAX(LONG_W)-MIN(LONG_W)),2)),4) FROM STATION;
