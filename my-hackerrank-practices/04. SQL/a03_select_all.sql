@@ -6,10 +6,10 @@
 -- Database Creation 
 	CREATE TABLE `a03_select_all` (
 		`id` INT NOT NULL AUTO_INCREMENT,
-		`name` VARCHAR(17) NULL DEFAULT NULL,
-		`countrycode` VARCHAR(3) NULL DEFAULT NULL,
-		`district` VARCHAR(20) NULL DEFAULT NULL,
-		`population` INT NULL DEFAULT NULL,
+		`name` VARCHAR(17) DEFAULT NULL,
+		`countrycode` VARCHAR(3) DEFAULT NULL,
+		`district` VARCHAR(20) DEFAULT NULL,
+		`population` INT DEFAULT NULL,
 		PRIMARY KEY (`id`) USING BTREE
 	)
 	COLLATE 'utf8mb4_0900_ai_ci'
