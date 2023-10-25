@@ -27,5 +27,5 @@
 
 -- Exercise Answer
 	SELECT *
-	FROM CITY
-	WHERE COUNTRYCODE = "JPN";
+	FROM a05_japanese_cities_attributes
+	WHERE countrycode = "JPN";

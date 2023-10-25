@@ -1,5 +1,9 @@
 # Challenges HackerRank.com
 
+https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white
+https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white
+https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white
+
 ### Estimeed Sirs,
 
 This repository is being used to allocate my resolutions of proposed exercises of www.hackerrank.com.

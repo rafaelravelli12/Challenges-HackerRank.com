@@ -27,6 +27,6 @@
 
 -- Exercise Answer
 	SELECT NAME 
-	FROM CITY
-	WHERE COUNTRYCODE = "USA" 
-	AND POPULATION > 120000;
+	FROM a02_revising_the_select_query_ii
+	WHERE countrycode = "USA" 
+	AND population > 120000;

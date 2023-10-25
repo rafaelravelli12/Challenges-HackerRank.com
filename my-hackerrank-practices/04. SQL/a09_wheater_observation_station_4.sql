@@ -26,5 +26,5 @@
 		('Miami', 'FL', 25.7617, -80.1918);
 
 -- Exercise Answer
-	SELECT (COUNT(CITY) - COUNT(DISTINCT CITY))
-	FROM STATION;
+	SELECT (COUNT(city) - COUNT(DISTINCT city))
+	FROM a09_wheater_observation_station_4;

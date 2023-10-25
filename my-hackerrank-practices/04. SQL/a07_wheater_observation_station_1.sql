@@ -26,6 +26,5 @@
 		('Miami', 'FL', 25.7617, -80.1918);
 
 -- Exercise Answer
-	SELECT NAME
-	FROM CITY
-	WHERE COUNTRYCODE = "JPN";
+	SELECT city, state
+	FROM a07_wheater_observation_station_1;

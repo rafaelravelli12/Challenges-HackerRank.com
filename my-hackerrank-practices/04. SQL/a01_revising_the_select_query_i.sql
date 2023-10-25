@@ -27,6 +27,6 @@
 
 -- Exercise Answer
 	SELECT *
-	FROM CITY
+	FROM a01_revising_the_select_query_i
 	WHERE countrycode = "USA"
 	AND population > 100000;

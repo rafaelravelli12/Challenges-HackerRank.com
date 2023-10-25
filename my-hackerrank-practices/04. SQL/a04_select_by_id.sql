@@ -27,5 +27,5 @@
 
 -- Exercise Answer
 	SELECT *
-	FROM CITY
-	WHERE ID = 1661;
+	FROM a04_select_by_id
+	WHERE id = 1661;

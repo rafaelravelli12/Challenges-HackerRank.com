@@ -26,6 +26,6 @@
 		('Miami', 'FL', 25.7617, -80.1918);
 
 -- Exercise Answer
-	SELECT DISTINCT CITY
-	FROM STATION
-	WHERE ID % 2 = 0;
+	SELECT DISTINCT city
+	FROM a08_wheater_observation_station_3
+	WHERE id % 2 = 0;

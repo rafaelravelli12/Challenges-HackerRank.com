@@ -27,4 +27,4 @@
 
 -- Exercise Answer
 	SELECT *
-	FROM CITY;
+	FROM a03_select_all;
