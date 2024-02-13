@@ -1,16 +1,7 @@
 -- Exercise Statement
 	-- https://leetcode.com/problems/product-sales-analysis-i/description/?envType=study-plan-v2&envId=top-sql-50
 -- Solved with MYQSL
--- Database Creation 	
-	CREATE TABLE `07_product_sales_analysis_i_one` (
-		`sale_id` INT,
-		`product_id` INT,
-		`year` INT,
-		`quantity` INT,
-		`price` INT,
-		PRIMARY KEY (`sale_id`, `product_id`)
-	) ENGINE=InnoDB CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
+-- Database Creation	
 	CREATE TABLE `07_product_sales_analysis_i_one` (
 		`sale_id` int NOT NULL,
 		`product_id` int NOT NULL,
