@@ -14,14 +14,6 @@
 			CONSTRAINT `product_id_fk` FOREIGN KEY (`product_id`) REFERENCES `07_product_sales_analysis_i_two` (`product_id`) ON DELETE CASCADE ON UPDATE CASCADE
 		) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-	-- Database Populate 
-		INSERT INTO `07_product_sales_analysis_i_one` (`sale_id`,`product_id`, `year`, `quantity`, `price`)
-		VALUES
-			(1, 100, 2008, 10, 5000),
-			(2, 100, 2009, 12, 5000),
-			(7, 200, 2011, 15, 9000);
-
-	-- Database Creation 	
 		CREATE TABLE `07_product_sales_analysis_i_two` (
 			`product_id` INT,
 			`product_name` VARCHAR(255),
@@ -29,6 +21,12 @@
 		) ENGINE=InnoDB CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 	-- Database Populate 
+		INSERT INTO `07_product_sales_analysis_i_one` (`sale_id`,`product_id`, `year`, `quantity`, `price`)
+		VALUES
+			(1, 100, 2008, 10, 5000),
+			(2, 100, 2009, 12, 5000),
+			(7, 200, 2011, 15, 9000);
+
 		INSERT INTO `07_product_sales_analysis_i_two` (`product_id`,`product_name`)
 		VALUES
 			(100, 'Nokia'),

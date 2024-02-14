@@ -9,6 +9,12 @@
 			PRIMARY KEY (`id`)
 		) ENGINE=InnoDB CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+		CREATE TABLE `06_replace_employee_id_with_the_unique_identifier_two` (
+			`id` INT,
+			`unique_id` INT,
+			PRIMARY KEY (`id`, `unique_id`)
+		) ENGINE=InnoDB CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 	-- Database Populate 
 		INSERT INTO `06_replace_employee_id_with_the_unique_identifier_one` (`id`,`name`)
 		VALUES
@@ -18,14 +24,6 @@
 			(90, 'Winston'),
 			(3, 'Jonathan');
 
-	-- Database Creation 	
-		CREATE TABLE `06_replace_employee_id_with_the_unique_identifier_two` (
-			`id` INT,
-			`unique_id` INT,
-			PRIMARY KEY (`id`, `unique_id`)
-		) ENGINE=InnoDB CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
-	-- Database Populate 
 		INSERT INTO `06_replace_employee_id_with_the_unique_identifier_two` (`id`,`unique_id`)
 		VALUES
 			(3, 1),
