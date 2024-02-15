@@ -1,6 +1,6 @@
 -- Exercise Statement
 	-- https://leetcode.com/problems/managers-with-at-least-5-direct-reports/description/?envType=study-plan-v2&envId=top-sql-50
-	
+
 -- Solved with MYQSL
 	-- Database Creation
 		CREATE TABLE `13_managers_with_at_least_5_direct_reports` (
@@ -23,9 +23,9 @@
 
 	-- Exercise Answer
 		SELECT t2.`name` FROM `13_managers_with_at_least_5_direct_reports` t1
-		INNEER JOIN `13_managers_with_at_least_5_direct_reports` t2 ON t1.`managerId` = t2.`id`
+		INNER JOIN `13_managers_with_at_least_5_direct_reports` t2 ON t1.`managerId` = t2.`id`
 		GROUP BY t1.`managerId` 
 		HAVING COUNT(t1.`managerId`) >= 5
 
 	-- Solution published 
-		-- https://leetcode.com/problems/students-and-examinations/solutions/4729549/solution-with-cross-and-left-joins/
+		-- https://leetcode.com/problems/managers-with-at-least-5-direct-reports/solutions/4734274/my-solution/?envType=study-plan-v2&envId=top-sql-50
