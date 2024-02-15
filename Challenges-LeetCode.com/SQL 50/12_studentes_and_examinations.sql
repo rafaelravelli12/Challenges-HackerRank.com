@@ -51,7 +51,7 @@
 			(1, 'Math');
 
 	-- Exercise Answer
-		SELECT t1.`student_id`, t1.`student_name`, t2.`subject_name`, count(t3.`subject_name`) AS `attended_exams`
+		SELECT t1.`student_id`, t1.`student_name`, t2.`subject_name`, COUNT(t3.`subject_name`) AS `attended_exams`
 		FROM `12_studentes_and_examinations_1` t1
 		CROSS JOIN `12_studentes_and_examinations_2` t2
 		LEFT JOIN `12_studentes_and_examinations_3` t3 ON t1.`student_id` = t3.`student_id` AND t2.`subject_name` = t3.`subject_name`
