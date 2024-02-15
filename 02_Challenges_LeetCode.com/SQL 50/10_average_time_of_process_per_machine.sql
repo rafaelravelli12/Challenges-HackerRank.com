@@ -1,5 +1,6 @@
 -- Exercise Statement
 	-- https://leetcode.com/problems/average-time-of-process-per-machine/description/?envType=study-plan-v2&envId=top-sql-50
+	
 -- Solved with MYQSL
 	-- Database Creation 	
 		CREATE TABLE `10_average_time_of_process_per_machine` (

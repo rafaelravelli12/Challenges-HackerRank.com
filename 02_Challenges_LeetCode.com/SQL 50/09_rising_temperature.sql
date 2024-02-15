@@ -1,5 +1,6 @@
 -- Exercise Statement
 	-- https://leetcode.com/problems/rising-temperature/description/?envType=study-plan-v2&envId=top-sql-50
+	
 -- Solved with MYQSL
 	-- Database Creation 	
 		CREATE TABLE `09_rising_temperature` (

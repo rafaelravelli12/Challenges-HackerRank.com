@@ -1,5 +1,6 @@
 -- Exercise Statement
 	-- https://leetcode.com/problems/students-and-examinations/description/?envType=study-plan-v2&envId=top-sql-50
+	
 -- Solved with MYQSL
 	-- Database Creation
 		CREATE TABLE `12_studentes_and_examinations_1` (
