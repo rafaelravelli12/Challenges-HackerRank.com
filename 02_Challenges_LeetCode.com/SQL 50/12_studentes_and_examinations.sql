@@ -55,9 +55,9 @@
 		SELECT t1.`student_id`, t1.`student_name`, t2.`subject_name`, COUNT(t3.`subject_name`) AS `attended_exams`
 		FROM `12_studentes_and_examinations_1` t1
 		CROSS JOIN `12_studentes_and_examinations_2` t2
-		LEFT JOIN `12_studentes_and_examinations_3` t3 ON t1.`student_id` = t3.`student_id` AND t2.`subject_name` = t3.`subject_name`
+		LEFT JOIN `12_studentes_and_examinations_3` t3 ON t3.`student_id` = t1.`student_id` AND t3.`subject_name` = t2.`subject_name`
 		GROUP BY t1.`student_id`, t1.`student_name`, t2.`subject_name`
-		ORDER BY t1.`student_id`, t2.`subject_name`
+		ORDER BY t1.`student_id`, t2.`subject_name`;
 
 	-- Solution published 
 		-- https://leetcode.com/problems/students-and-examinations/solutions/4729549/solution-with-cross-and-left-joins/

@@ -31,7 +31,7 @@
 		SELECT t1.`machine_id`, ROUND(AVG(t1.`timestamp` - t2.`timestamp`), 3) AS `processing_time` 
 		FROM `10_average_time_of_process_per_machine` t1
 		INNER JOIN `10_average_time_of_process_per_machine` t2
-		ON t1.`machine_id` = t2.`machine_id` AND t1.`process_id` = t2.`process_id` AND t1.`activity_type` != t2.`activity_type`
+			ON t2.`machine_id` = t1.`machine_id` AND t2.`process_id` = t1.`process_id` AND t2.`activity_type` != t1.`activity_type`
 		WHERE t1.`activity_type` = 'end'
 		GROUP BY t1.`machine_id`;
 

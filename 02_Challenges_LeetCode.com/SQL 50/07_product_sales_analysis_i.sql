@@ -36,7 +36,7 @@
 	-- Exercise Answer
 		SELECT t2.`product_name`, t1.`year`, t1.`price`
 		FROM `sales` t1
-		INNER JOIN `product` t2 ON t1.`product_id` = t2.`product_id`
+		INNER JOIN `product` t2 ON t2.`product_id` = t1.`product_id`;
 
 	-- Solution published 
 		-- https://leetcode.com/problems/product-sales-analysis-i/solutions/4735301/a-simple-solution/

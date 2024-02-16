@@ -39,8 +39,8 @@
 	-- Exercise Answer
 		SELECT t1.`user_id`, ROUND(IFNULL(AVG(t2.`action` = 'confirmed'), 0), 2) AS `confirmation_rate`
 		FROM `14_confirmation_rate_1` t1
-		LEFT JOIN `14_confirmation_rate_2` t2 ON t1.`user_id` = t2.`user_id`
-		GROUP BY t1.`user_id`
+		LEFT JOIN `14_confirmation_rate_2` t2 ON t2.`user_id` = t1.`user_id`
+		GROUP BY t1.`user_id`;
 
 	-- Solution published 
 		-- https://leetcode.com/problems/confirmation-rate/solutions/4735136/my-solution/

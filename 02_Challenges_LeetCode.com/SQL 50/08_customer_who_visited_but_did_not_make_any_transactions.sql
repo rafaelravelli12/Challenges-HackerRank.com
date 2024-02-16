@@ -38,9 +38,9 @@
 	-- Exercise Answer
 		SELECT t1.`customer_id`, COUNT(*) AS count_no_trans 
 		FROM `08_customer_who_visited_but_did_not_make_any_transactions_one` t1
-		LEFT JOIN `08_customer_who_visited_but_did_not_make_any_transactions_two` t2 ON t1.`visit_id` = t2.`visit_id`
+		LEFT JOIN `08_customer_who_visited_but_did_not_make_any_transactions_two` t2 ON t2.`visit_id` = t1.`visit_id`;
 		WHERE t2.`transaction_id` IS NULL
 		GROUP BY t1.`customer_id`;
 
 	-- Solution published 
-		-- 
+		-- missing upload - Too many attempts

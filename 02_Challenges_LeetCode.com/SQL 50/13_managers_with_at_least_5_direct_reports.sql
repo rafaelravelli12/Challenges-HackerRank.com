@@ -23,9 +23,9 @@
 
 	-- Exercise Answer
 		SELECT t2.`name` FROM `13_managers_with_at_least_5_direct_reports` t1
-		INNER JOIN `13_managers_with_at_least_5_direct_reports` t2 ON t1.`managerId` = t2.`id`
+		INNER JOIN `13_managers_with_at_least_5_direct_reports` t2 ON t2.`id` = t1.`managerId`
 		GROUP BY t1.`managerId` 
-		HAVING COUNT(t1.`managerId`) >= 5
+		HAVING COUNT(t1.`managerId`) >= 5;
 
 	-- Solution published 
 		-- https://leetcode.com/problems/managers-with-at-least-5-direct-reports/solutions/4734274/my-solution/?envType=study-plan-v2&envId=top-sql-50

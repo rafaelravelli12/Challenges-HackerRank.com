@@ -20,7 +20,7 @@
 
 	-- Exercise Answer
 		SELECT  t1.`id` FROM `09_rising_temperature` t1
-		LEFT JOIN `09_rising_temperature` t2 ON t1.`recordDate` = (t2.`recordDate` + INTERVAL 1 DAY)
+		LEFT JOIN `09_rising_temperature` t2 ON (t2.`recordDate` + INTERVAL 1 DAY) = t1.`recordDate`
 		WHERE t1.`temperature` > t2.`temperature`;
 
 	-- Solution published 
