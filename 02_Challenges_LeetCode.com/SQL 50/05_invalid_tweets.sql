@@ -19,3 +19,6 @@
 		SELECT DISTINCT `tweet_id`
 		FROM `05_invalid_tweets`
 		WHERE LENGTH(`content`) > 15;
+
+	-- Solution published 
+		-- https://leetcode.com/problems/invalid-tweets/solutions/4735227/my-simple-solution/

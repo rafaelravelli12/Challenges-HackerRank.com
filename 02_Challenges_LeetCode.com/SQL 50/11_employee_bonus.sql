@@ -4,19 +4,19 @@
 -- Solved with MYQSL
 	-- Database Creation
 		CREATE TABLE `11_employee_bonus_one` (
-		`empId` INT,
-		`name` VARCHAR(255),
-		`supervisor` INT,
-		`salary` INT,
-		PRIMARY KEY (`empId`)
+			`empId` INT,
+			`name` VARCHAR(255),
+			`supervisor` INT,
+			`salary` INT,
+			PRIMARY KEY (`empId`)
 		) ENGINE=InnoDB CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 		CREATE TABLE `11_employee_bonus_two` (
-		`empId` INT,
-		`bonus` INT,
-		PRIMARY KEY (`empId`),
-		KEY `empId_fk` (`empId`),
-		CONSTRAINT `empId_fk` FOREIGN KEY (`empId`) REFERENCES `11_employee_bonus_one` (`empId`) ON DELETE CASCADE ON UPDATE CASCADE
+			`empId` INT,
+			`bonus` INT,
+			PRIMARY KEY (`empId`),
+			KEY `empId_fk` (`empId`),
+			CONSTRAINT `empId_fk` FOREIGN KEY (`empId`) REFERENCES `11_employee_bonus_one` (`empId`) ON DELETE CASCADE ON UPDATE CASCADE
 		) ENGINE=InnoDB CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 	-- Database Populate 

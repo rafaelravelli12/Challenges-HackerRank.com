@@ -23,3 +23,6 @@
 		SELECT `product_id`
 		FROM `01_recyclable_and_low_fat_products`
 		WHERE `low_fats` = "Y" AND `recyclable` = "Y";
+
+	-- Solution published 
+		-- https://leetcode.com/problems/recyclable-and-low-fat-products/solutions/4735174/my-simple-solution/

@@ -26,3 +26,6 @@
 		FROM `04_article_views_i`
 		WHERE `author_id` = `viewer_id`
 		ORDER BY `id` ASC;
+
+	-- Solution published 
+		-- https://leetcode.com/problems/article-views-i/solutions/4735221/my-simple-solution/

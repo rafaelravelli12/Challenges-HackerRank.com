@@ -25,3 +25,6 @@
 		SELECT `name`, `area`, `population`
 		FROM `03_big_countries`
 		WHERE `area` >= 300000 OR `population` >= 5000000;
+
+	-- Solution published 
+		-- https://leetcode.com/problems/big-countries/solutions/4735212/my-simple-solution/

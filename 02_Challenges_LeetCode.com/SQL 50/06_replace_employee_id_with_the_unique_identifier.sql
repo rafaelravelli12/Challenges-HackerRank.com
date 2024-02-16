@@ -34,3 +34,6 @@
 		SELECT a2.`unique_id`, a1.`name`
 		FROM `06_replace_employee_id_with_the_unique_identifier_one` a1
 		LEFT JOIN `06_replace_employee_id_with_the_unique_identifier_two` a2 on a1.`id` = a2.`id`;
+
+	-- Solution published 
+		-- https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/solutions/4735247/my-simple-solution/

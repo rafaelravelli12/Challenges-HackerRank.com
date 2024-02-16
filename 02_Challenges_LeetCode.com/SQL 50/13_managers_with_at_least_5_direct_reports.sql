@@ -4,11 +4,11 @@
 -- Solved with MYQSL
 	-- Database Creation
 		CREATE TABLE `13_managers_with_at_least_5_direct_reports` (
-		`id` INT AUTO_INCREMENT,
-		`name` VARCHAR(255),
-		`department` VARCHAR(255),
-		`managerId` INT,
-		PRIMARY KEY (`id`)
+			`id` INT AUTO_INCREMENT,
+			`name` VARCHAR(255),
+			`department` VARCHAR(255),
+			`managerId` INT,
+			PRIMARY KEY (`id`)
 		) ENGINE=InnoDB CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 	-- Database Populate 

@@ -4,23 +4,23 @@
 -- Solved with MYQSL
 	-- Database Creation
 		CREATE TABLE `12_studentes_and_examinations_1` (
-		`student_id` INT AUTO_INCREMENT,
-		`student_name` VARCHAR(255),
-		PRIMARY KEY (`student_id`)
+			`student_id` INT AUTO_INCREMENT,
+			`student_name` VARCHAR(255),
+			PRIMARY KEY (`student_id`)
 		) ENGINE=InnoDB CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 		CREATE TABLE `12_studentes_and_examinations_2` (
-		`subject_name` VARCHAR(255),
-		PRIMARY KEY (`subject_name`)
+			`subject_name` VARCHAR(255),
+			PRIMARY KEY (`subject_name`)
 		) ENGINE=InnoDB CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 		CREATE TABLE `12_studentes_and_examinations_3` (
-		`student_id` INT,
-		`subject_name` VARCHAR(255),
-		KEY `student_id_fk` (`student_id`),
-		KEY `subject_name_fk` (`subject_name`),
-		CONSTRAINT `student_id_fk` FOREIGN KEY (`student_id`) REFERENCES `12_studentes_and_examinations_1` (`student_id`) ON DELETE CASCADE ON UPDATE CASCADE
-		CONSTRAINT `subject_name_fk` FOREIGN KEY (`subject_name`) REFERENCES `12_studentes_and_examinations_2` (`subject_name`) ON DELETE CASCADE ON UPDATE CASCADE
+			`student_id` INT,
+			`subject_name` VARCHAR(255),
+			KEY `student_id_fk` (`student_id`),
+			KEY `subject_name_fk` (`subject_name`),
+			CONSTRAINT `student_id_fk` FOREIGN KEY (`student_id`) REFERENCES `12_studentes_and_examinations_1` (`student_id`) ON DELETE CASCADE ON UPDATE CASCADE
+			CONSTRAINT `subject_name_fk` FOREIGN KEY (`subject_name`) REFERENCES `12_studentes_and_examinations_2` (`subject_name`) ON DELETE CASCADE ON UPDATE CASCADE
 		) ENGINE=InnoDB CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 	-- Database Populate 

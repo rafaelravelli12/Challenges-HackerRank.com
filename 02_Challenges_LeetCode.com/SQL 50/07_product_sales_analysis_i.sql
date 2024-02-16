@@ -34,6 +34,9 @@
 			(300, 'Samsung');
 
 	-- Exercise Answer
-		SELECT a2.`unique_id`, a1.`name`
-		FROM `06_replace_employee_id_with_the_unique_identifier_one` a1
-		LEFT JOIN `06_replace_employee_id_with_the_unique_identifier_two` a2 on a1.`id` = a2.`id`;
+		SELECT t2.`product_name`, t1.`year`, t1.`price`
+		FROM `sales` t1
+		INNER JOIN `product` t2 ON t1.`product_id` = t2.`product_id`
+
+	-- Solution published 
+		-- https://leetcode.com/problems/product-sales-analysis-i/solutions/4735301/a-simple-solution/

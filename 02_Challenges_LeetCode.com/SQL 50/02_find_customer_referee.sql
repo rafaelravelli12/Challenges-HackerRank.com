@@ -24,3 +24,6 @@
 		SELECT `name`
 		FROM `02_find_customer_referee`
 		WHERE `referee_id` != 2 or `referee_id` IS NULL;
+
+	-- Solution published 
+		-- https://leetcode.com/problems/find-customer-referee/solutions/4735189/my-simple-solution/
