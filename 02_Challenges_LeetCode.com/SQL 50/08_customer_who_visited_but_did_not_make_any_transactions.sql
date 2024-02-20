@@ -43,4 +43,4 @@
 		GROUP BY t1.`customer_id`;
 
 	-- Solution published 
-		-- missing upload - Too many attempts
+		-- https://leetcode.com/problems/customer-who-visited-but-did-not-make-any-transactions/solutions/4759805/a-simple-solution/
