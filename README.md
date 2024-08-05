@@ -1,4 +1,4 @@
-<img src="code_challenges_logo.png" width="300" />
+<img src="code_challenges_logo.jpg" width="300" />
 
 ![GitHub commits](https://img.shields.io/github/commit-activity/m/rafaelravelli12/code_challenges)
 
